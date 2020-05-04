@@ -1,0 +1,33 @@
+powershell
+go version
+go env
+& "$env:GOPATH\bin\hello"
+
+
+cmd
+$env:GOPATH
+$env:GOROOT
+$env:GOBIN
+curl localhost:11111
+
+
+mkdir hello-world
+cd hello-world
+pwd
+
+create empty github
+git init
+git remote add origin https://github.com/ryan29871/hello-world.git
+go mod init github.com/ryan29871/hello-world
+cat go.mod
+
+create main module folder and run
+go mod init main
+
+
+{% comment %} If our package code were inside the module directory, then package name would be same as the module name (in order to successfully resolve import statement). {% endcomment %}
+
+1.2.3
+1 = major : major difference between the old version and the new version
+2 = minor : new or enhanced functionality is added
+3 = patch : when there is a small change in the package
