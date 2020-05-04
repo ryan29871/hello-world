@@ -34,6 +34,12 @@ git tag --list
 cd into main folder
 go run app.go
 
+not working
+go get -u  only updates minor and major
+go get -u=patch only updates patch
+
+
+
 
 {% comment %} If our package code were inside the module directory, then package name would be same as the module name (in order to successfully resolve import statement). {% endcomment %}
 {% comment %} If our package code were inside module directory itself, we would have imported it with github.com/thatisuday/nummanip only and we would have needed to use nummanip as the package variable to run nummanip.Add(). {% endcomment %}
