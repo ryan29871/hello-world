@@ -1,3 +1,13 @@
+Why use go?
+    Multi-treaded by design
+    Self-contained, portable, and cross-platform
+    Strongly typed, compiled
+    Excellent native JSON support "XML too"
+    Extensive native testing framework
+    Simple and easy to understand
+    Robust, stable, well maintained
+    Go offers all these tools from the start
+
 powershell
 go version
 go env
