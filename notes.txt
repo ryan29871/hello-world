@@ -34,11 +34,11 @@ git tag --list
 cd into main folder
 go run app.go
 
-not working
-go get -u  only updates minor and major
-go get -u=patch only updates patch
+go get github.com/ryan29871/hello-world  only updates minor and major
+go get github.com/ryan29871/hello-world -u=patch only updates patch
 
-
+update go mod file to
+module github.com/ryan29871/hello-world/v2
 
 
 {% comment %} If our package code were inside the module directory, then package name would be same as the module name (in order to successfully resolve import statement). {% endcomment %}
