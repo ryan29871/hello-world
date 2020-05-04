@@ -24,10 +24,24 @@ cat go.mod
 create main module folder and run
 go mod init main
 
+commit changes
+git push -u -f origin master
+git tag v1.0.0
+git push --tags
+git tag
+git tag --list
+
+cd into main folder
+go run app.go
+
 
 {% comment %} If our package code were inside the module directory, then package name would be same as the module name (in order to successfully resolve import statement). {% endcomment %}
+{% comment %} If our package code were inside module directory itself, we would have imported it with github.com/thatisuday/nummanip only and we would have needed to use nummanip as the package variable to run nummanip.Add(). {% endcomment %}
+
 
 1.2.3
 1 = major : major difference between the old version and the new version
 2 = minor : new or enhanced functionality is added
 3 = patch : when there is a small change in the package
+
+
